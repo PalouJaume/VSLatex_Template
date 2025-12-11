@@ -1,0 +1,59 @@
+{
+    // Configurar variables de entorno
+    "latex-workshop.latex.outDir": "./output",
+
+    // LaTeX Workshop - Compilación automática al guardar
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    
+    // Visor de PDF integrado en VS Code
+    "latex-workshop.view.pdf.viewer": "tab",
+    
+    // Limpiar archivos auxiliares automáticamente
+    "latex-workshop.latex.autoClean.run": "onFailed",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", 
+        "*.lof", "*.lot", "*.out", "*.toc", "*.acn", 
+        "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", 
+        "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
+        "*.run.xml", "*.bcf"
+    ],
+    
+    // Receta de compilación (pdflatex + bibtex)
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex",
+            "tools": ["pdflatex"]
+        },
+        {
+            "name": "pdflatex → bibtex → pdflatex × 2",
+            "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+        }
+    ],
+    
+    // Herramientas de compilación
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {
+                "TMPDIR": "./tmp"
+            }
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": ["%DOCFILE%"]
+        }
+    ],
+    
+    // Mostrar errores y warnings
+    "latex-workshop.message.error.show": true,
+    "latex-workshop.message.warning.show": true
+}
