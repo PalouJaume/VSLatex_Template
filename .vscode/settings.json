@@ -1,4 +1,9 @@
 {
+    // Limitar longitud de lineas
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 60,
+    "editor.rulers": [80],
+
     // Configurar variables de entorno
     "latex-workshop.latex.outDir": "./output",
 
@@ -55,5 +60,8 @@
     
     // Mostrar errores y warnings
     "latex-workshop.message.error.show": true,
-    "latex-workshop.message.warning.show": true
+    "latex-workshop.message.warning.show": true,
+
+    // Configurar idioma LTex
+    "ltex.language": "es"
 }

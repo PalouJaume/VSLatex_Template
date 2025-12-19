@@ -17,6 +17,8 @@ Configuración optimizada de VS Code + LaTeX Workshop para proyectos LaTeX con g
 - ✅ **Limpieza automática**: Elimina archivos auxiliares después de compilar
 - ✅ **Visor integrado**: PDF dentro de VS Code
 - ✅ **SyncTeX**: Navegación bidireccional entre código y PDF
+- ✅ **Editor**: Se limita la longitud máxima de linea
+- ✅ **LTex**: Se configura el corrector ortografico a Español
 
 ## 📁 Estructura del Proyecto
 
@@ -52,4 +54,4 @@ tu-proyecto-latex/
 - [Overleaf - Aprende LaTeX](https://www.overleaf.com/learn)
 - [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX)
 - [Detexify](http://detexify.kirelabs.org/classify.html) - Encuentra símbolos LaTeX dibujándolos
-
+- [Manualdelatex](https://manualdelatex.com/tutoriales/crear-un-documento)
